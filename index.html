@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html,body{
+
+           margin: 2px;
+          background-color: beige;
+           
+             
+            
+        }
+
+        
+        .container{
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+            grid-row-gap: 0px;
+            grid-auto-flow: row;
+            grid-auto-flow: dense;
+            border: 5px solid red;
+            
+        }
+
+        .container > div{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container > div > img{
+
+         width:100%;
+         height:100%;
+         object-fit: cover;
+         
+         }
+
+         .squares4{
+    
+         grid-row: span 2;
+         grid-column: span 2;
+
+
+         }
+
+         .Horizontal2{
+    
+             grid-column: span 2;
+             
+              }
+
+              .vertical2{   
+                
+                grid-row: span 2;
+                
+              }
+
+         
+
+       
+      
+
+
+    
+
+
+    </style>
+</head>
+<body>
+
+   
+        <div class ="container">
+
+            <div class ="squares4"> <img src ="https://thegameassetsmine.com/wp-content/uploads/2022/11/Mountain-Pass-BACK-300x300.png"> </div>  
+            <div class ="Horizontal2"> <img src ="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/30/2016/07/22145207/megazip-adventure-park-singapore-300x150.jpg"> </div>
+            <div class ="Horizontal2"> <img src ="https://cdn.lospec.com/gallery/monochromatic-alone-827146.png"> </div>
+            <div class ="Horizontal2"> <img src ="https://t1.uc.ltmcdn.com/es/posts/0/5/8/como_hacer_fotografias_profesionales_en_la_playa_10850_300_150.jpg"> </div>   
+            <div class ="1squarebox"> <img src ="https://picsum.photos/150/150"> </div>
+            <div class ="vertical2"> <img src ="https://picsum.photos/150/300"> </div> 
+            <div class ="1squarebox"> <img src ="https://upload.pokeheroes.com/img/ava.php?uid=328798433&g=f"> </div>
+            <div class ="Horizontal2"> <img src ="https://picsum.photos/300/150"> </div> 
+            
+            
+
+        </div>
+
+
+
+  
+
+    
+</body>
+</html>
